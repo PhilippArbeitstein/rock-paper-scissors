@@ -9,5 +9,15 @@ function getComputerChoice() {
     }
 }
 
+function getHumanChoice() {
+    let choice = String(prompt("Enter your choice: "));
 
-console.log(getComputerChoice());
+    if(choice == "Rock" || choice == "Paper" || choice == "Scissors") {
+        return choice;
+    } else {
+        console.log("Please enter a valid choice (Rock/Paper/Scissors)");
+        getHumanChoice();
+    }
+}
+
+console.log(getHumanChoice());
