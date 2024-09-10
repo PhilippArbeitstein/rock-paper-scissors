@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     let rdm = Math.random();
     if(rdm <= 1/3) {
