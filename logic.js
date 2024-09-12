@@ -11,10 +11,13 @@ score.textContent = "" +humanScore + " : " + computerScore+ " ";
 function getComputerChoice() {
     let rdm = Math.random();
     if(rdm >= 0 && rdm <= 1/3) {
+        alert("Computer chose Rock");
         return "rock";
     } else if(rdm > 1/3 && rdm <= 2/3) {
+        alert("Computer chose Paper");
         return "paper";
     } else {
+        alert("Computer chose Scissors");
         return "scissors";
     }
 }
